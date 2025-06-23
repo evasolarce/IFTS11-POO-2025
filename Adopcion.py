@@ -134,7 +134,7 @@ def menu():
             temperamento = input("Temperamento: ")
             perro = Perro(nombre, raza, edad, tamaño, peso, estado_salud, vacunado, temperamento)
             sistema.cargar_perro(perro)
-            print(f"🐶 Perro cargado con ID: {perro.id}")
+            print(f"Perro cargado con ID: {perro.id}")
 
         elif opcion == "3":
             dni = input("DNI del usuario: ")
@@ -146,27 +146,27 @@ def menu():
                     for p in sugerencias:
                         print(p.mostrar_info())
                 else:
-                    print("❌ No hay perros que coincidan con las preferencias.")
+                    print("No hay perros que coincidan con las preferencias.")
             else:
-                print("❌ Usuario no encontrado.")
+                print("Usuario no encontrado.")
 
         elif opcion == "4":
             dni = input("DNI del usuario: ")
             perro_id = input("ID del perro: ")
             usuario = sistema.buscar_usuario(dni)
             if usuario and sistema.postular_adopcion(perro_id, usuario):
-                print("✅ Postulación registrada. Estado del perro: reservado.")
+                print("Postulación registrada. Estado del perro: reservado.")
             else:
-                print("❌ Falló la postulación.")
+                print("Falló la postulación.")
 
         elif opcion == "5":
             dni = input("DNI del usuario: ")
             perro_id = input("ID del perro: ")
             usuario = sistema.buscar_usuario(dni)
             if usuario and sistema.confirmar_adopcion(perro_id, usuario):
-                print("🎉 Adopción confirmada.")
+                print("Adopción confirmada.")
             else:
-                print("❌ Falló la adopción.")
+                print("Falló la adopción.")
 
         elif opcion == "6":
             print(sistema.mostrar_perros(estado='disponible'))
@@ -177,14 +177,14 @@ def menu():
             if usuario:
                 print(usuario.ver_historial())
             else:
-                print("❌ Usuario no encontrado.")
+                print("Usuario no encontrado.")
 
         elif opcion == "8":
             print("👋 ¡Gracias por usar el sistema de adopción!")
             break
 
         else:
-            print("❌ Opción inválida.")
+            print("Opción inválida.")
 
 
 if __name__ == "__main__":
