@@ -121,7 +121,7 @@ def menu():
             preferencias = {'raza': raza or None, 'edad': int(edad) if edad else None, 'tamaño': tamaño or None}
             usuario = UsuarioAdoptante(nombre, dni, email, preferencias)
             sistema.registrar_usuario(usuario)
-            print("✅ Usuario registrado.")
+            print("Usuario registrado.")
 
         elif opcion == "2":
             nombre = input("Nombre del perro: ")
