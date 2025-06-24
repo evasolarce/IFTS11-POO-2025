@@ -1,4 +1,5 @@
 import uuid
+from django.db import models
 
 class Perro:
     def __init__(self, nombre, raza, edad, tamaño, peso, estado_salud, vacunado, temperamento):
