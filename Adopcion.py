@@ -180,7 +180,7 @@ def menu():
                 print("Usuario no encontrado.")
 
         elif opcion == "8":
-            print("👋 ¡Gracias por usar el sistema de adopción!")
+            print("¡Gracias por usar el sistema de adopción!")
             break
 
         else:
